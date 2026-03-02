@@ -1,14 +1,32 @@
 /**
  * Copyright (c) 2006-2024, JGraph Holdings Ltd
  * Copyright (c) 2006-2024, draw.io AG
+ *
+ * Changed for Diagram Maker: diagrams stay on the device, and the cloud
+ * connectors, export server and PlantUML server are switched off.
  */
-// Overrides of global vars need to be pre-loaded
 window.DRAWIO_PUBLIC_BUILD = true;
-window.EXPORT_URL = 'REPLACE_WITH_YOUR_IMAGE_SERVER';
-window.PLANT_URL = 'REPLACE_WITH_YOUR_PLANTUML_SERVER';
-window.DRAWIO_BASE_URL = null; // Replace with path to base of deployment, e.g. https://www.example.com/folder
-window.DRAWIO_VIEWER_URL = null; // Replace your path to the viewer js, e.g. https://www.example.com/js/viewer.min.js
-window.DRAWIO_LIGHTBOX_URL = null; // Replace with your lightbox URL, eg. https://www.example.com
+window.EXPORT_URL = '/not-available';
+window.PLANT_URL = '/not-available';
+window.DRAWIO_BASE_URL = null;
+window.DRAWIO_VIEWER_URL = null;
+window.DRAWIO_LIGHTBOX_URL = null;
 window.DRAW_MATH_URL = 'math4/es5';
-window.DRAWIO_CONFIG = null; // Replace with your custom draw.io configurations. For more details, https://www.drawio.com/doc/faq/configure-diagram-editor
+window.DRAWIO_CONFIG = null;
 urlParams['sync'] = 'manual';
+urlParams['mode'] = 'device';
+urlParams['local'] = '1';
+urlParams['browser'] = '0';
+urlParams['gapi'] = '0';
+urlParams['db'] = '0';
+urlParams['od'] = '0';
+urlParams['gh'] = '0';
+urlParams['gl'] = '0';
+urlParams['tr'] = '0';
+urlParams['picker'] = '0';
+urlParams['nowarn'] = '1';
+urlParams['stealth'] = '1';
+urlParams['p'] = '';
+urlParams['noSaveBtn'] = '1';
+urlParams['noExitBtn'] = '1';
+urlParams['saveAndExit'] = '0';
